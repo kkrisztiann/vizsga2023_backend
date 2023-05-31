@@ -15,6 +15,7 @@ var pool = mysql.createPool({
 
 app.use(express.urlencoded({extended: true}));
 
+
 //összes koncert lekérdezés
 app.get(':/table', (req,res) => {
     var table = req.params.table;
